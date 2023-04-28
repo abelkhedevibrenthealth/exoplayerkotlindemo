@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment"
+    android:theme="@style/NoActionBar"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.exoplayer2.ui.StyledPlayerView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:show_shuffle_button="true"
+                app:show_subtitle_button="true"
+                app:controller_layout_id="@layout/exo_styled_player_control_view"/>
+
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="amar"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/demo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello"/>
+
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:background="@drawable/nature"/>
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:background="@drawable/nature"/>
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:background="@drawable/nature"/>
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:background="@drawable/nature"/>
+            <Button
+                android:id="@+id/request_focus_to_top"
+                android:text="Request focus to top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:background="@drawable/nature"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
